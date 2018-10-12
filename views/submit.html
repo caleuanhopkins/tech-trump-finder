@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title></title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand"></a>
+        <a class="nav-item nav-link active" href="#">Add <span class="sr-only">(current)</span></a>
+    </nav>
+
+    <main role="main" class="container" style="padding-top:20px;" ng-controller="MainCtrl">
+        <h2>Add Entry</h2>
+        <p>Add your name, your card and your twitter handle (optional) so people can find you!</p> 
+        <div class="row">
+            <div class="col-md-12 order-md-1">
+                <h4 class="mb-3">Submit</h4>
+                <form action="submit" method="POST">
+                    <div class="row">
+                        <div class="col-md-12 order-md-1">
+                            <label for="index">Row # (for updating only)</label>
+                            <input type="text" class="form-control" name="index" id="index" placeholder="" value="" style="">
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-md-12 order-md-1">
+                            <label for="attendee">Full attendee</label>
+                            <input type="text" name="attendee" class="form-control" id="attendee" placeholder="" value="" required="" style="">
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-md-12 order-md-1">
+                            <label for="card">Card title</label>
+                            <input type="text" class="form-control" name="card" id="card" placeholder="" value="" required="" style="">
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-md-12 order-md-1">
+                            <label for="twitter">Twitter handle (optional)</label>
+                            <input type="text" class="form-control" name="twitter" id="twitter" placeholder="" value="" required="" style="">
+                        </div>
+                    </div>   
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button> 
+                </form> 
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
