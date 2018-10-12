@@ -2,7 +2,7 @@ require('dotenv').load({silent: true});
 const express = require('express');
 const nunjucks = require('nunjucks');
 const app = express();
-const port = 3000;
+const port = 80;
 const { Pool } = require('pg');
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
